@@ -1,6 +1,7 @@
 /*navbar*/
 body {
     font-family: 'Newsreader';font-size: 22px;
+    max-width: 1200px;
 }
 nav {
     width: 100%;
@@ -27,8 +28,59 @@ nav {
 /*here active navicon*/
 
 /* body */
+/* main */
+main {
+    padding: 20px;
+}
 
+/* Kategorien */
+/* kategorien */
+.category {
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    background-color: beige;
+    padding:  10px 50px;
+    /* padding: 20px; */
+}
+/* parent div for all selectors(inputs) */
+.category-select {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px; /* Optional: Adjust the space between items */
+}
+/* div for 1 checkbox + label */
+.category-selector {
+    background-color: bisque; 
+    width: 300px; 
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
+    margin: 20px; /* Optional: Adjust margin around items */
+}
+/* artikelanzeige */
+.articles {
+    display: flex; /* Optional: To handle multiple article-card items if needed */
+    flex-wrap: wrap; /* Optional: To allow wrapping if there are multiple cards */
+    gap: 10px; /* Adjust space between .article-card items if needed */
+    background-color: beige;
 
+}
+.article-card {
+    position: relative; /* Ensures that the child elements are positioned relative to this container */
+    width: 100%; /* Ensures the card takes full width of its container if flex or grid layout is used */
+    overflow: hidden; /* Prevents overflow of the image outside the card */
+    margin: 10px; /* Adjust this margin as needed */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+.article-pic {
+    display: block; /* Ensures the image is treated as a block element */
+    width: 100%; /* Makes the image width 100% of its parent container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    margin: 0; /* Removes any default margin */
+    padding: 0; /* Removes any default padding */
+}
 /* footer */
 footer {
     display: flex;
