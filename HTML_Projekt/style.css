@@ -64,7 +64,7 @@ nav {
     font-weight: 600; /* Slightly bolder font weight */
 }
 /* body */
-/* main */
+/* general main styling */
 main {
     padding: 20px;
 }
@@ -116,26 +116,101 @@ main {
 .article-pic {
     display: none;
 }
+
+/*------------------------------------------------------------ */
+/* general product page styling*/
+.product-top {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: gray;
+    border-bottom: 1px solid black;
+}
+.product-picture {
+    flex: 2;
+    height: auto;
+    background-color: lightgray;
+    margin: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.product-picture img {
+    width: 100%;
+    height: auto;
+    border: 3px solid black;
+}
+.product-details {
+    flex: 1;
+    height: auto;
+    padding: 50px;
+    margin: 10px;
+    background-color: lightgray;
+}
+.product-description {
+    /* min-height: 300px; */
+    height:  auto;
+    width: 100%;
+    background-color: lightgray;
+    margin: 10px;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+}
+.product-description p {
+    padding: 50px;
+}
+.similar-products {
+    display: flex; /* Use flexbox to arrange children side by side */
+    justify-content: space-between; /* Distribute space between the items */
+    margin: 10px;
+    background-color: lightgray;
+}
+
+.similar-article {
+    flex: 1; /* Each similar-article takes equal space */
+    flex-direction: column;
+    margin: 10px; /* Margin between each article */
+    padding: 10px; /* Padding inside each article */
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
+    background-color: white; /* Background color for better visual separation */
+    overflow: hidden; /* Ensure content does not overflow */
+    display: flex; /* Enable flexbox for centering the image */
+    align-items: center; /* Center image vertiscally */
+}
+
+.similar-article img {
+    max-width: 100%; /* Ensure image fits within the parent width */
+    max-height: 100%; /* Ensure image fits within the parent height */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any inline spacing */
+    object-fit: cover; /* Cover the div while maintaining aspect ratio */
+}
+.similar-article h4 {
+    margin-top: 10px; /* Space between the image and the price */
+    padding-left: 10px; /* Add some padding to the left for better spacing */
+}
 /*------------------------------------------------------------ */
 /* Kontakt */
-/* Impressum Section */
-.impressum {
-    margin: 20px;
-}
-span {
-    line-height: 1.2; /* Adjust the line height as needed, 1.5 is a common choice */
-}
+
 /* Kontakt Section */
 .kontakt {
     background-color: rgba(216, 209, 209, 0.8);
     display: flex;
     justify-content: center;
     color: black;
-    padding: 40px 0;
+    padding: 40px 20px;
 }
-
+/* Impressum Section */
+.impressum {
+    flex: 1;
+    margin: 20px;
+}
+span {
+    line-height: 1.2; /* Adjust the line height as needed, 1.5 is a common choice */
+}
 /* Contact Form */
 .contactform {
+    flex: 1;
     background-color: white;
     border: 1px solid black;
     box-shadow: 5px 5px 5px dimgrey;
