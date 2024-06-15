@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pro.duktion kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Newsreader' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/pro.duktion_logo.png" alt="logo von pro.duktion">
+            </div>
+            <div class="navicon">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="navicon">
+                <a href="kategorien.html">Kategorien</a>
+            </div>
+            <div class="navicon">
+                <a href="kontakt.html" class="active">Kontakt</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+       
+        <div class="kontakt">
+             <div class="impressum">
+                <h3>Seiteninhaber</h3>
+                <span>
+                    pro.duktion GmbH<br>
+                    Erfundene Strasse 123<br>
+                    8888 erfundener Ort<br>
+                    Tel: +41 33 000 00 00<br>
+                    <br>
+                    Email - info@pro.duktion.ch
+                </span>
+            </div>
+            <form class="contactform">
+                <div class="anrede">
+                    <input type="radio" class="radio" id="ismale" name="gender" value="Herr">
+                    <label class="anrede-herr" for="ismale">Herr</label>
+                    <input type="radio" class="radio" id="isfemale" name="gender" value="Frau">
+                    <label class="anrede-frau" for="isfemale">Frau</label>
+                </div>
+                <input type="text" id="fnachname" name="lname" placeholder="Ihr Nachname"><br>
+                <input type="text" id="fvorname" name="fname" placeholder="Ihr Vorname"><br>
+                <input type="email" id="fmail" name="email" placeholder="Ihre E-mail"><br>
+                <textarea id="fmessage" name="message" placeholder="Ihre Nachricht"></textarea><br>
+                <button id="send" class="submit" type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_component">
+            <a href="#">Impressum</a>
+        </div>
+        <div class="footer_component">
+            <a href="#">Kontakt</a>
+        </div>
+        <div class="footer_component">
+            <a href="#">Datenschutz</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
