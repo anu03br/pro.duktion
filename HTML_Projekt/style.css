@@ -1,22 +1,48 @@
-/*navbar*/
+/* body */
 body {
     font-family: 'Newsreader';font-size: 22px;
     max-width: 1200px;
 }
+/*navbar*/
 nav {
-    width: 100%;
     display: flex;
+    justify-content: space-between; /* Distributes the items evenly */
+    align-items: center; /* Centers items vertically */
+    padding: 10px 20px;
+    background-color: #f8f8f8; /* Background color for the nav */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for better visuals */
     border-bottom: 1px solid black;
+    height: 50px;
 }
 .logo {
-    width: 80px; /* Set the width of the div */
-    height: 40px; /* Set the height of the div */
+    height: 100%;
+    width: auto;
+    flex: 1; /* Makes logo div take available space */
+    display: flex;
+    justify-content: flex-start; /* Aligns content to the left */
 }
 /* Ensure the img fills the parent div */
 .logo img {
-    width: 100%; /* Make the image fill the width of the div */
-    height: 100%; /* Make the image fill the height of the div */
+    height: auto; /* Make the image fill the height of the div */
     object-fit: fill; /* Ensure the image covers the div without distortion */
+}
+.socials {
+    flex: 1; /* Makes socials div take available space */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+}
+.socials a {
+    margin: 0 10px; /* Space between social icons */
+    color: black;
+}
+/* Hover effect for social media icons */
+.socials a:hover {
+    transform: scale(1.2); /* Scale up the icon to 120% of its original size */
+}
+.navicons {
+    flex: 1; /* Makes navicons div take available space */
+    display: flex;
+    justify-content: flex-end; /* Aligns content to the right */
 }
 .navicon {
     padding: 10px;
@@ -24,9 +50,19 @@ nav {
 .navicon a {
     text-decoration: none;
     color: black;
+    margin-left: 20px; /* Space between each navicon link */
+    font-size: 16px;
 }
 /*here active navicon*/
-
+/* Active link styling */
+.navicon a.active {
+    font-weight: bold; /* Makes the active link bold */
+    color: black; /* Keeps the active link text color black */
+    text-decoration: underline; /* Adds an underline to the active link */
+}
+.navicon a:hover {
+    font-weight: 600; /* Slightly bolder font weight */
+}
 /* body */
 /* main */
 main {
