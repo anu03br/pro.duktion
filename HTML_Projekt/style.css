@@ -9,7 +9,6 @@ nav {
     justify-content: space-between; /* Distributes the items evenly */
     align-items: center; /* Centers items vertically */
     padding: 10px 20px;
-    background-color: #f8f8f8; /* Background color for the nav */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for better visuals */
     border-bottom: 1px solid black;
     height: 50px;
