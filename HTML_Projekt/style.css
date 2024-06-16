@@ -98,23 +98,40 @@ main {
 .articles {
     width: 100%;
     height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     margin-top: 10px;
     padding: 10px;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
     background-color: bisque;
 
 }
 .article-card {
+    width: 300px;
+    height: auto;
     box-sizing: border-box;
     background-color: white;
+    padding: 20px;
+    border-right: 1px solid black;
     
 }
-
-.article-pic {
-    display: none;
+.article-card h5 {
+    margin: 10px 0;
+}
+.article-card a {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.painting-small {
+    width: 100%;
+    height: auto;
+    
+}
+.painting-big {
+    width: 100%;
+    height: auto;  
 }
 
 /*------------------------------------------------------------ */
