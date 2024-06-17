@@ -10,7 +10,7 @@ nav {
     align-items: center; /* Centers items vertically */
     padding: 10px 20px;
     border-bottom: 1px solid black;
-    height: 50px;
+    height: auto;
 }
 .logo {
     height: 100%;
@@ -21,7 +21,8 @@ nav {
 }
 /* Ensure the img fills the parent div */
 .logo img {
-    height: auto; /* Make the image fill the height of the div */
+    height: 60px; /* Make the image fill the height of the div */
+    width: 110px;
     object-fit: fill; /* Ensure the image covers the div without distortion */
 }
 .socials {
@@ -417,3 +418,83 @@ footer p {
     text-decoration: none;
     color: black;
 }
+
+/* @---------------------------------------------------@ */
+/* media Queries */
+/* for I Pad mini */
+/* Media query for screens 768px and smaller */
+@media only screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;  /* Stack items vertically */
+        align-items: center;     /* Center items horizontally */
+        padding: 10px 0;         /* Add some padding for spacing */
+    }
+
+    .logo img {
+        height: 120px;
+        width: auto;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: center; /* Center social icons horizontally */
+        gap: 15px;               /* Add space between social icons */
+        margin-bottom: 20px;     /* Space below the social icons */
+    }
+    .socials a:hover {
+        transform: scale(1.5); /* Scale up the icon to 120% of its original size */
+        /* this doesn't work in media query */
+    }
+    .socials i{
+        font-size: 40px;
+    }
+
+    .navicons {
+        display: flex;
+        flex-direction: column;  /* Stack navigation links vertically */
+        align-items: center;     /* Center navigation links horizontally */
+        gap: 10px;               /* Add space between nav links */
+        width: 100%;
+    }
+    .navicon {
+        width: 100%;
+        justify-content: center;
+        border-top: 1px solid black;
+    }
+
+    .navicon a {
+        font-size: 32px;        /* Increase font size for better readability */
+        text-decoration: none;  /* Remove underline for cleaner look */
+    }
+    /* Active link styling */
+    .navicon a.active {
+        background-color: white;
+        font-weight: bold; /* Makes the active link bold */
+        text-decoration: underline; /* Adds an underline to the active link */
+    }
+    .navicon a:hover {
+        font-weight: 600; /* Slightly bolder font weight */
+    }
+
+}
+ /* for mobile (Samsung Galaxy S20)
+@media only screen and (max-width: 420px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    nav div {
+        max-width: 100px;
+        font-size: larger;
+        border-bottom: 1px solid black;
+    }
+    .navicons {
+        flex-direction: column;
+    }
+    .navicon a {
+        font-size: larger;
+    }
+
+} */
