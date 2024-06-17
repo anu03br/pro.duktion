@@ -1,7 +1,11 @@
+
 /* body */
 body {
     font-family: 'Newsreader';font-size: 22px;
     max-width: 1200px;
+    
+    margin: auto;
+    
 }
 /*navbar*/
 nav {
@@ -187,6 +191,8 @@ box-sizing:border-box;
 .category-select {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    
     width: 100%;
     gap: 10px; /* Optional: Adjust the space between items */
 }
@@ -218,6 +224,7 @@ box-sizing:border-box;
     background-color: white;
     padding: 20px;
     border-right: 1px solid black;
+    border-bottom: 1px solid black;
     
 }
 .article-card h5 {
@@ -284,7 +291,6 @@ box-sizing:border-box;
     display: flex; /* Use flexbox to arrange children side by side */
     flex-wrap: wrap;
     width: 100%;
-    gap: 10px;
     padding: 0 10px;
     margin: 10px;
     box-sizing: border-box;
@@ -295,11 +301,16 @@ box-sizing:border-box;
     display: flex;
     flex: 1; /* Each similar-article takes equal space */
     flex-direction: column;
-    margin: 10px 0; /* Margin between each article */
+    margin: 5px; /* Margin between each article */
     padding: 10px; /* Padding inside each article */
     box-sizing: border-box; /* Include padding and border in the element's width and height */
     background-color: white; /* Background color for better visual separation */  
     align-items: center; /* Center image vertiscally */
+}
+.similar-article:last-child {
+    display: none;
+    opacity: 0;
+    background-color: #00796b;
 }
 
 .similar-article img {
@@ -325,11 +336,13 @@ box-sizing:border-box;
     justify-content: center; /* Center child elements vertically */
     color: black;
     padding: 40px 20px;
+    align-items: stretch;
 }
 .kontakt-form {
    flex: 1;
-   min-width: 320px; 
+   min-width: 0; 
    margin: 10px;
+   box-sizing: border-box;
 }
 /* Impressum Section */
 .impressum {
@@ -379,19 +392,24 @@ form button:hover {
 
 /* Gender Selection */
 .anrede {
-    display: flex;               /* Use Flexbox for layout */
-    align-items: center;         /* Center items vertically */
-    gap: 10px;                   /* Space between each item */
-    margin-bottom: 10px;         /* Space below the .anrede div */
+    display: flex; 
+    flex-wrap: wrap;
+justify-content: center;    /* Use Flexbox for layout */
+    align-items: center;    /* Center items vertically */
+    gap: 10px;              /* Space between each item */
+    margin-bottom: 10px;    /* Space below the .anrede div */
+}
+.anrede div {
+    display: flex;
 }
 
 /* Radio buttons and labels */
-.anrede input[type="radio"] {
+.anrede div input[type="radio"] {
     width: 30px;
     margin-right: 5px;  /* Adjust spacing between the radio button and label */
 }
 
-.anrede label {
+.anrede div label {
     margin-right: 15px;  /* Adjusts spacing between the label and the next radio button */
     display: flex;
     align-items: center;
@@ -516,6 +534,11 @@ footer p {
         max-width: 50%;
         box-sizing: border-box; /* Ensure padding and border are included in the size */
     }
+    .similar-article:last-child {
+        display: block;
+        opacity: 0;
+        background-color: #00796b;
+    }
 
     /* ---------------------------------------------------------------- */
     /* kontakt */
@@ -556,6 +579,9 @@ footer p {
         flex-basis: calc(100% - 10px); /* 50% width minus margins to fit two per row */
         max-width: 100%;
         box-sizing: border-box; /* Ensure padding and border are included in the size */
+    }
+    .kontakt-form {
+
     }
 
 
