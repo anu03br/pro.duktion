@@ -37,6 +37,7 @@
     <main>      
         <div class="kontakt">
              <div class="impressum">
+                <p>Schreiben Sie uns einen Brief</p>
                 <h3>Seiteninhaber</h3>
                 <span>
                     pro.duktion GmbH<br>
@@ -47,31 +48,38 @@
                     Email - info@pro.duktion.ch
                 </span>
             </div>
-            <form class="contactform">
-                <div class="anrede">
-                    <input type="radio" class="radio" id="ismale" name="gender" value="Herr">
-                    <label class="anrede-herr" for="ismale">Herr</label>
-                    <input type="radio" class="radio" id="isfemale" name="gender" value="Frau">
-                    <label class="anrede-frau" for="isfemale">Frau</label>
-                </div>
-                <input type="text" id="fnachname" name="lname" placeholder="Ihr Nachname"><br>
-                <input type="text" id="fvorname" name="fname" placeholder="Ihr Vorname"><br>
-                <input type="email" id="fmail" name="email" placeholder="Ihre E-mail"><br>
-                <textarea id="fmessage" name="message" placeholder="Ihre Nachricht"></textarea><br>
-                <button id="send" class="submit" type="submit">Send</button>
-            </form>
+            <div class="kontakt-form">
+                <p>Oder benutzen Sie einfach das Kontaktform</p>
+               <form class="contactform">
+                    <div class="anrede">
+                        <input type="radio" class="radio" id="ismale" name="gender" value="Herr">
+                        <label class="anrede-herr" for="ismale">Herr</label>
+                        <input type="radio" class="radio" id="isfemale" name="gender" value="Frau">
+                        <label class="anrede-frau" for="isfemale">Frau</label>
+                    </div>
+                    <input type="text" id="fnachname" name="lname" placeholder="Ihr Nachname"><br>
+                    <input type="text" id="fvorname" name="fname" placeholder="Ihr Vorname"><br>
+                    <input type="email" id="fmail" name="email" placeholder="Ihre E-mail"><br>
+                    <textarea id="fmessage" name="message" placeholder="Ihre Nachricht"></textarea><br>
+                    <button id="send" class="submit" type="submit">Send</button>
+                </form> 
+            </div>
+            
         </div>
     </main>
     <footer>
-        <div class="footer_component">
-            <a href="#">Impressum</a>
-        </div>
-        <div class="footer_component">
-            <a href="#">Kontakt</a>
-        </div>
-        <div class="footer_component">
-            <a href="#">Datenschutz</a>
-        </div>
+        <p><b>Alle unsere Kunstwerke werden in der Schweiz produziert. Alle Rohstoffe kommen ebenfalls aus der Schweiz</b></p>
+        <div class="footer_components">
+            <div class="footer_component">
+                <p>Haben Sie Fragen oder Anliegen?<br><a href="kontakt.html">Kontaktieren</a> Sie uns!</p>
+            </div>
+            <div class="footer_component">
+                <p>Unsere <a href="kontakt.html"> Datenschutzerklärung</a><br>finden Sie hier.</p>
+            </div>
+            <div class="footer_component">
+                <p>Alle auf dieser Website gezeigten Bilder<br>sind Eigentum von pro.duktion</p>
+            </div>
+        </div>      
     </footer>
     <script src="script.js"></script> 
 </body>
