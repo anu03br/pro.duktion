@@ -1,9 +1,11 @@
 
-/* body */
+/* general main styling */
+main {
+    padding: 20px;
+}
 body {
     font-family: 'Newsreader';font-size: 22px;
-    max-width: 1200px;
-    
+    max-width: 1200px;   
     margin: auto;
     
 }
@@ -65,11 +67,6 @@ nav {
 }
 .navicon a:hover {
     font-weight: 600; /* Slightly bolder font weight */
-}
-/* body */
-/* general main styling */
-main {
-    padding: 20px;
 }
 
 /*------------------------------------------------------------ */
@@ -586,6 +583,5 @@ footer p {
         font-size: 30px;
 
     }
-
 
 }
